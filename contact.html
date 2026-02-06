@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TBT English School</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="l-header js-header">
+      <div class="l-header__inner">
+        <div class="l-header-logo">
+          <a href="/" class="p-header-logo__link">
+            <img
+              src="images/header/logo-header.svg"
+              alt="TBT english school"
+              class="p-header-logo__img"
+            />
+          </a>
+        </div>
+        <nav class="p-global-nav l-header__nav">
+          <ul class="p-global-nav__list">
+            <li class="p-global-nav__item current-menu-item">
+              <a href="/" class="p-global-nav__link">ホーム</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="courses.html" class="p-global-nav__link">コース・料金</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="private-lesson.html" class="p-global-nav__link"
+                >出張レッスン</a
+              >
+            </li>
+            <li class="p-global-nav__item">
+              <a href="teacher.html" class="p-global-nav__link">講師紹介</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="index.html#access" class="p-global-nav__link"
+                >アクセス</a
+              >
+            </li>
+            <li class="p-global-nav__item">
+              <a href="index.html#faq" class="p-global-nav__link"
+                >よくある質問</a
+              >
+            </li>
+            <li class="p-global-nav__item p-global-nav__item--contact">
+              <a href="contact.html" class="p-global-nav__link"
+                >無料見学・ご相談</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          class="c-hamburger js-btn"
+          aria-label="メニューを開く"
+          aria-controls="global-nav"
+        >
+          <span class="c-hamburger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="p-page-header">
+      <div class="p-page-header__inner">
+        <span class="p-page-header__subtitle">contact</span>
+        <h1 class="p-page-header__title">お問い合わせ</h1>
+      </div>
+    </section>
+
+    <div class="l-block">
+      <div class="l-inner">
+        <div class="p-contact__body">
+          <div class="p-contact__lead">
+            <p>
+              無料見学のご予約や、英語に関するご相談など、お気軽にお問い合わせください。
+            </p>
+            <p>お急ぎの方はお電話ください。</p>
+          </div>
+          <div class="p-contact__tel">
+            <a href="tel:0120-501-764"><small>tel. </small>0120-501-764</a>
+            <span>受付時間: 平日9:00〜18:00</span>
+          </div>
+
+          <div class="p-contact__lead">
+            <p>公式LINEからもお問い合わせを受け付けております。</p>
+          </div>
+          <div class="p-contact__line">
+            <a href="#" class="c-line-button">
+              <span class="c-line-button__icon">
+                <img src="images/contact/line.png" alt="" />
+              </span>
+              <span class="c-line-button__text">LINEで問い合わせる</span>
+            </a>
+          </div>
+          <!-- /.p-contact__line -->
+
+          <div class="p-contact__lead">
+            <p>
+              メールでのお問い合わせは、下記フォームへ必要事項を入力の上、送信してください。1～2営業日以内に、担当よりメールにて返信いたします。
+            </p>
+            <p class="p-contact__require">
+              ※<span class="require">*</span>が付いている項目は必須です。
+            </p>
+          </div>
+          <div class="p-contact__form">
+            <div class="c-form">
+              <dl class="c-form__list">
+                <div class="c-form__item">
+                  <dt class="c-form__term">
+                    <label for="name" class="c-form__label"
+                      >お名前<span class="require">*</span></label
+                    >
+                  </dt>
+                  <dd class="c-form__desc">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="c-form__input"
+                      autocomplete="name"
+                    />
+                  </dd>
+                </div>
+
+                <div class="c-form__item">
+                  <dt class="c-form__term">
+                    <label for="email" class="c-form__label">
+                      メールアドレス<span class="require">*</span>
+                    </label>
+                  </dt>
+                  <dd class="c-form__desc">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="c-form__input"
+                      required
+                      autocomplete="email"
+                    />
+                  </dd>
+                </div>
+
+                <div class="c-form__item">
+                  <dt class="c-form__term">
+                    <label for="tel" class="c-form__label">電話番号</label>
+                  </dt>
+                  <dd class="c-form__desc">
+                    <input
+                      type="tel"
+                      id="tel"
+                      name="tel"
+                      class="c-form__input"
+                      autocomplete="tel"
+                    />
+                  </dd>
+                </div>
+
+                <div class="c-form__item">
+                  <dt class="c-form__term">
+                    <label for="message" class="c-form__label">
+                      お問い合わせ内容<span class="require">*</span>
+                    </label>
+                  </dt>
+                  <dd class="c-form__desc">
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="c-form__textarea"
+                      required
+                    ></textarea>
+                  </dd>
+                </div>
+              </dl>
+
+              <div class="c-form__privacy-box">
+                <p>
+                  <a
+                    href="privacy-policy.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >プライバシーポリシー</a
+                  >
+                  に同意して、送信してください。
+                </p>
+              </div>
+
+              <div class="c-form__button">
+                <button type="submit" class="c-form__button-action">
+                  この内容で送信する
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="l-footer">
+      <div class="l-inner">
+        <div class="l-footer__head">
+          <div class="l-footer__logo">TBT English School</div>
+
+          <address class="l-footer__address">
+            <span
+              >〒025-0092<br />
+              岩手県花巻市大通り１丁目３−５<br />花巻市ビジネスインキュベータ1階</span
+            >
+
+            <span class="l-footer__tel">
+              tel. <a href="tel:0120-501-764">0120-501-764</a>
+            </span>
+          </address>
+        </div>
+
+        <div class="l-footer__bottom">
+          <nav class="l-footer__nav">
+            <ul>
+              <li><a href="/policy">個人情報保護方針</a></li>
+              <li>
+                <a href="https://three-blue-trees.com/" target="_blank"
+                  >運営会社</a
+                >
+              </li>
+              <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+          </nav>
+
+          <small class="l-footer__copy">&copy; Three Blue Trees, inc.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
