@@ -1933,6 +1933,17 @@ li {
   margin: 0;
 }
 
+.p-info-list__desc ul {
+  display: grid;
+  row-gap: 8px;
+}
+
+.p-info-list__note {
+  margin-top: 12px;
+  font-size: 14px;
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .p-info-table {
     padding: 60px;
@@ -1944,11 +1955,160 @@ li {
   }
 
   .p-info-list__term {
-    width: 25%;
+    width: 35%;
     margin-bottom: 0;
   }
 
   .p-info-list__desc {
-    width: 75%;
+    width: 65%;
+  }
+}
+
+/*================================
+	404
+=================================*/
+
+.p-error__contents {
+  background: var(--color-bg);
+  padding: 20px 16px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.p-error__contents h2 {
+  color: var(--color-main);
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .p-error__contents {
+    padding: 40px 40px 24px;
+  }
+
+  .p-error__contents h2 {
+    font-size: 22px;
+  }
+}
+
+/*================================
+	送信完了画面
+=================================*/
+
+.p-thanks {
+  padding: 40px 0;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.p-thanks__heading {
+  font-size: 24px;
+}
+
+.p-thanks__texts {
+  margin-top: 20px;
+}
+
+.p-thanks__texts p {
+  margin-bottom: 16px;
+}
+
+@media not all and (min-width: 767px) {
+  .p-thanks__texts br {
+    display: none;
+  }
+}
+
+.p-thanks__alert p {
+  color: #cb0808;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .p-thanks__heading {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-thanks {
+    padding: 64px 0;
+  }
+
+  .p-thanks__heading {
+    font-size: 32px;
+  }
+
+  .p-thanks__texts {
+    margin-top: 28px;
+    font-size: 18px;
+  }
+
+  .p-thanks__alert {
+    font-size: 18px;
+  }
+}
+
+/*================================
+	privacy-policy
+=================================*/
+
+.p-policy {
+  padding: 40px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.p-policy-main h2 {
+  font-size: clamp(1.125rem, 0.989rem + 0.68vw, 1.5rem);
+  margin-top: 44px;
+  margin-bottom: -18px;
+}
+
+.p-policy-main p {
+  font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
+  line-height: 2.25;
+  margin: 30px 0;
+}
+
+.p-policy-main ul {
+  margin: 30px 0;
+}
+
+.p-policy-main li {
+  margin: 6px 0;
+  padding-left: 24px;
+  line-height: 2;
+  font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
+  position: relative;
+}
+
+.p-policy-main li:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0.75em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #333;
+  border-radius: 100%;
+}
+
+@media (min-width: 1024px) {
+  .p-policy {
+    padding: 64px 0;
+  }
+
+  .p-policy-main h2 {
+    margin-top: 54px;
+  }
+
+  .p-policy-main p {
+    margin: 36px 0;
+  }
+
+  .p-policy-main ul {
+    margin: 36px 0;
   }
 }
