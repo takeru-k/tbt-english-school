@@ -1777,7 +1777,6 @@ li {
   aspect-ratio: 16 / 9;
   height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 
 @media (min-width: 1024px) {
@@ -1907,7 +1906,7 @@ li {
   }
 
   .p-media-item__image img {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 3 / 2;
     border-radius: 10px;
     border: 1px solid #eee;
   }
