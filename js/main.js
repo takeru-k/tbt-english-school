@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!container) return;
 
   // 設定項目
-  const shapeCount = 30;
+  const isMobile = window.innerWidth < 768;
+  const shapeCount = isMobile ? 20 : 30;
   const colors = [
     "#ff768a", // ピンク 1
     "#89c3eb", // 水色 1
