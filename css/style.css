@@ -580,7 +580,7 @@ li {
     order: 1;
   }
 
-  .p-hero__visual-item--top img {
+  .p-hero__visual-item img {
     width: 100%;
     max-width: 360px;
     margin-inline: auto;

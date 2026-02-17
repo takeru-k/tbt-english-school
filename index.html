@@ -107,11 +107,18 @@
           </div>
 
           <div class="p-hero__visual-item p-hero__visual-item--bottom">
-            <img
-              src="images/top/hero-people-bottom.png"
-              alt="勉強する生徒たち"
-              class="p-hero__img"
-            />
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="images/top/hero-people-bottom--pc.png"
+              />
+
+              <img
+                src="images/top/hero-people-bottom--sp.png"
+                alt="勉強する生徒たち"
+                class="p-hero__img"
+              />
+            </picture>
           </div>
         </div>
       </div>
